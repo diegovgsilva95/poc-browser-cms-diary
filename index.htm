@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser-based Offline Diary</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/moment/min/moment-with-locales.min.js"></script>
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <section class="file-list-wrapper">
+            <div class="file-tools">
+                <button id="btn-new"><i data-feather="file-plus"></i></button>
+                <button id="btn-del"><i data-feather="trash-2"></i></button>
+                <button id="btn-bkp"><i data-feather="share"></i></button>
+            </div>
+            <select id="file-list" size="2"></select>
+        </section>
+        <section class="center-wrapper">
+            <section class="toolbar"></section>
+            <section class="title-wrapper">
+                <input type="text" id="content-title" value="Untitled">
+            </section>
+            <section class="editor-wrapper">
+                <div class="content-editor" contenteditable autofocus>
+                    <p></p>
+                </div>
+            </section>
+        </section>
+
+
+    </div>
+    <script src="js/index.mjs" type="module"></script>
+</body>
+</html>
